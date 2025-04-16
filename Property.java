@@ -2,66 +2,66 @@ package numbers;
 
 public enum Property {
     EVEN {
-        public boolean test(long number) {
-            return PropertyChecks.isEven(number);
+        public boolean test(NumberRecord record) {
+            return record.isEven();
         }
     },
     ODD {
-        public boolean test(long number) {
-            return PropertyChecks.isOdd(number);
+        public boolean test(NumberRecord record) {
+            return record.isOdd();
         }
     },
     BUZZ {
-        public boolean test(long number) {
-            return PropertyChecks.isBuzz(number);
+        public boolean test(NumberRecord record) {
+            return record.isBuzz();
         }
     },
     DUCK {
-        public boolean test(long number) {
-            return PropertyChecks.isDuck(number);
+        public boolean test(NumberRecord record) {
+            return record.isDuck();
         }
     },
     PALINDROMIC {
-        public boolean test(long number) {
-            return PropertyChecks.isPalindromic(number);
+        public boolean test(NumberRecord record) {
+            return record.isPalindromic();
         }
     },
     GAPFUL {
-        public boolean test(long number) {
-            return PropertyChecks.isGapful(number);
+        public boolean test(NumberRecord record) {
+            return record.isGapful();
         }
     },
     SPY {
-        public boolean test(long number) {
-            return PropertyChecks.isSpy(number);
+        public boolean test(NumberRecord record) {
+            return record.isSpy();
         }
     },
     SQUARE {
-        public boolean test(long number) {
-            return PropertyChecks.isSquare(number);
+        public boolean test(NumberRecord record) {
+            return record.isSquare();
         }
     },
     SUNNY {
-        public boolean test(long number) {
-            return PropertyChecks.isSunny(number);
+        public boolean test(NumberRecord record) {
+            return record.isSunny();
         }
     },
     JUMPING {
-        public boolean test(long number) {
-            return PropertyChecks.isJumping(number);
+        public boolean test(NumberRecord record) {
+            return record.isJumping();
         }
     },
     SAD {
-        public boolean test(long number) {
-            return PropertyChecks.isSad(number);
+        public boolean test(NumberRecord record) {
+            return record.isSad();
         }
     },
     HAPPY {
-        public boolean test(long number) {
-            return PropertyChecks.isHappy(number);
+        public boolean test(NumberRecord record) {
+            return record.isHappy();
         }
     },
     ;
 
-    public abstract boolean test(long number);
+    public abstract boolean test(NumberRecord record);
 }

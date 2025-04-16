@@ -66,10 +66,10 @@ public class AmazingNumbers {
             NumberRecord record = new NumberRecord(startNumber + iteration++);
             boolean isFit = true;
             for (Property property : properties) {
-                isFit &= property.test(record.getNumber());
+                isFit &= property.test(record);
             }
             for (Property property : excludedProperties) {
-                isFit &= !property.test(record.getNumber());
+                isFit &= !property.test(record);
             }
 
             if (isFit) {
